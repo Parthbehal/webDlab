@@ -6,6 +6,7 @@
     http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EduLearn - Online Education</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
     
@@ -26,8 +27,23 @@
 
     
     <main>
-        <section class="Contact">
-           
+        <section class="intro">
+            <h2>CONTACT US..</h2>
+            <div id="form">
+                <form onsubmit="return subm(event);">
+                    <span>Name:</span>
+                    <input type="text" placeholder="Enter Your Name">
+                    <span>Phone Number:</span>
+                    <input type="text" placeholder="Your Phone Number">
+                    <span>Email Address:</span>
+                    <input type="email" placeholder="Enter Your Email">
+                    <br></br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="image">
+                <img src="Contact us-amico.svg" alt="Login">
+            </div>
         </section>
     </main>
 
@@ -37,5 +53,10 @@
             <p>&copy; 2024 EduLearn. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function subm(e){
+            alert("Thanks for contacting us !")
+        }
+    </script>
 </body>
 </html>
